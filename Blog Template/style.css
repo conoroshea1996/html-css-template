@@ -1,0 +1,93 @@
+
+body, html{
+    height:100vh;
+}
+body{
+    margin:0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows: 10% 30% auto 10%;
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar section1 section2 section3"
+        "sidebar main main main"
+        "sidebar footer footer footer"
+}
+/*Sidebar*/
+aside {
+    grid-area: sidebar;
+    border: solid pink 2px;
+    background: lightblue;
+}
+.vericaltext{
+    padding-top: 20px;
+    text-transform: uppercase;
+    margin: auto;
+    width:10px;
+    word-wrap: break-word;
+    font-size: 25px /* this is just for good looks */
+}
+/*Heading*/
+
+header{
+    display: flex;
+    grid-area: header;
+    border: solid pink 2px;
+    background:lightcyan;  
+    justify-content: center;
+    align-items: center;
+}
+/*Picutre Section*/
+section{
+    display: flex;
+    grid-area: section1 section2 section3;
+    border: solid pink 2px;
+    background: lightgoldenrodyellow;
+    justify-content: center;
+    align-items: center;
+}
+/*Main */
+main{
+    grid-area: main;
+    border: solid pink 2px;
+    background:lightgray;
+}
+main h3{
+    text-align: center;
+    height:8%;
+    border-bottom: 1px solid black;
+}
+main p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/*Footer*/
+footer{
+    grid-area: footer;
+    border: solid pink 2px;
+    background: lightcoral;
+}
+footer h4{
+    margin: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+footer ul{
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    padding: 0;
+}
+footer ul li{
+    display: inline;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+footer ul li a:hover {
+    cursor: pointer;
+}
