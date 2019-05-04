@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: black;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width:80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 50%;
+}
+.logo img{
+    width: 200px;
+    height: 100%;
+}
+.list ul li{
+    display: inline;
+    color: white;
+    padding-right: 20px;
+}
+.list ul li i{
+    color: white;
+}
+.items{
+    background: blue;
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    text-align: center;
+}
+.shop{
+    position: relative;
+}
+.badge {
+    position:absolute;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 9px;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background:blue;
+      color: #fff;
+      padding: 0 5px;
+      margin-left: -15px; 
+  }
+
+  /*-----------------*/
+  .second{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+  }
+  .bars{
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+  }
+  .bars i{
+      padding-right: 10px;
+  }
+  .bar{
+      font-size: 25px;
+  }
+
+  .listSecond{
+      text-transform: capitalize;
+  }
+
+  .listSecond ul li{
+      display: inline;
+      padding-right: 20px;
+  }
+  .listSecond ul li a{
+      text-decoration: none;
+  }
+
+  /*-------------------*/
+  .banner{
+      height: 40vh;
+      background: url(https://images.pexels.com/photos/2044044/pexels-photo-2044044.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .center{
+      color: #fff;
+      width: 80%;
+      text-align: center;
+  }
+
+  .buttons{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 22% 22% 22% 1fr;
+      grid-column-gap: 20px;
+  }
+
+  input{
+      padding:5px;
+      border: 5px;
+  }
+
+  .btn{
+        background: blue;
+        padding: 0 30px;
+        border:none;
+        border-radius: 5px;
+  }
+
+  .category{
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  .gallery{
+      height: 35vh;
+      margin: 20px auto;
+      width: 80%;
+      display: grid;
+      grid-auto-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      grid-template-areas:
+      'image1 image1 image2'
+      'image3 image4 image5';
+  }
+  .grid1{
+      grid-area: image1;
+    background: black;
+  }
+  .grid2{
+      grid-area: image2;
+      background: red;
+  }
+  .grid3{
+    grid-area: image3;
+    background: red;
+}
+.grid4{
+    grid-area: image4;
+    background: red;
+}
+.grid5{
+    grid-area: image5;
+    background: rgb(136, 79, 79);
+}
+
