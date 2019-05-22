@@ -1,0 +1,260 @@
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Header */
+.header{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    height: 15vh;
+    max-width: 100%;
+    margin: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 100%;
+    max-height: 80%;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38,123,152);
+    clip-path: polygon(15% 0, 101% 0, 101% 100%, 0% 100%);
+    font-size: 1.4rem;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    padding: 0 8px;
+}
+.btn{
+    background: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.contact{
+    background: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    margin-right: 0px;
+}
+/* End Of Header */
+
+/* Hero */
+.hero{
+    height: 75vh;
+    background: url(/img/background.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-content{
+    margin-bottom: 20vh;
+    width: 60%;
+}
+
+.hero-content h1{
+    background: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.8rem;
+}
+.hero-content h5{
+    background: rgba(128, 206, 215, 0.61);
+    width: 50%;
+    float: right;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+.hero-content h5 a{
+    color: white;
+}
+/* End Of Hero */
+
+/* About */
+.about{
+    display: grid;
+    max-width: 100%;
+    height: 350px;
+    grid-template-columns: 30% 1fr;
+    grid-column-gap: 10px;
+    margin: 10px 0px;
+}
+
+.news{
+    background:#07BEB8;
+}
+.news-card{
+    padding:55px;
+    color: white;
+}
+.news-card h1 {
+    text-align: center;
+}
+
+
+.news-card h1 i{
+    margin-right: 10px;
+}
+.news-card p a{
+    color: white;
+}
+.line{
+    width:100%;
+    height: 2px;
+    background: white;
+}
+.info{
+    background: grey;
+    display: flex;
+}
+.info-text{
+    flex:2;
+    background: #419D78;
+}
+.info-img{
+    flex:1;
+    background: url(/img/info.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #419D78;
+    opacity: 0.45;
+}
+
+.info-card{
+    padding: 30px;
+    color: white;
+}
+.line2{
+    width: 150px;
+    height: 5px;
+    background: white;
+}
+.info-btn{
+    color: #419D78;
+    font-weight: bold;
+    border: none;
+    margin: 10px 5px;
+    transition: all 1s ease;
+}
+.info-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* End Of About */
+/* Image */
+.image{
+    background: url(/img/image.jpg);
+    background-size: cover;
+    height: 330px;
+    position: relative;
+}
+.image p{
+    position: absolute;
+    background: white;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+/* End Of Image */
+/* Banner */
+.banner{
+    display:grid;
+    height: 200px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 10px 0;
+}
+.logo-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-banner img{
+    width: 50%;
+    height: 100px;
+}
+/* End Of Banner */
+
+/* Footer */
+.footer{
+    height: 300px;
+    background:#419D78;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    'address contact social parnter'
+    'address none none none';
+    border-top: dashed white 3px;
+    color: white;
+}
+.address{
+    grid-area: address;
+    border-right: dashed white 3px;
+    margin-bottom: 10px;
+    padding:0px 10px;
+}
+.contact-info{
+    border-right: dashed white 3px;
+    padding:0px 10px;
+    padding-left: 5px;
+    grid-area: contact;
+}
+.social{
+    grid-area: social;
+    padding:0px 10px;
+    padding-left: 5px;
+    border-right: dashed white 3px;
+}
+.social .icons{
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.partners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.copywrite{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(38,123,152);
+    color: white;
+}
+/* End Of Footer */
+
