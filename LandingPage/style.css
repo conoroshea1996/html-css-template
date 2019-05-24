@@ -258,3 +258,62 @@ body{
 }
 /* End Of Footer */
 
+@media only screen and (max-width: 800px){
+/* Responsive Header */
+.header{
+    display: grid;
+    grid-template-columns: 70%  1fr;
+    grid-template-rows: 80% 20%;
+    height: 15vh;
+    max-width: 100%;
+    margin:0;
+    color: white;
+    box-sizing: border-box;
+    grid-template-areas: 
+    'logo logo'
+    'about contact';
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 100%;
+    max-height: 80%;
+}
+
+.nav{
+    grid-area: about;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38,123,152);
+    clip-path: unset !important;
+    font-size: 1rem;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.nav ul li{
+    padding: 0 6px;
+}
+
+.contact{
+    grid-area: contact;
+    background: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+/*End Of Responsive Header */
+}
