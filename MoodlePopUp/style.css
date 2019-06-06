@@ -1,0 +1,26 @@
+.modal-content {
+    background:url(/moodle-test.jpg);
+    background-size: 100% 100%;
+}
+.close{
+    color: rgb(14, 245, 206);
+    transition: all 0.4s ease;
+    float: left !important;
+    padding: 0;
+    margin: 0;
+}
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+}
+.close:hover{
+    color: red;
+}
+.btn-me{
+    background: rgba(0, 217, 255, 0.795);
+    width:200px;
+    border-radius: 80px;
+}
+.center{
+    margin:auto;
+}
